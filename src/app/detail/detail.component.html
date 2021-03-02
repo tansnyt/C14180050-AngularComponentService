@@ -1,0 +1,9 @@
+<p id="judul">{{ judul }}</p>
+<p id="isi"></p>
+<p id="tanggal"></p>
+
+<ng-template *ngIf="fav; then fav0; else fav1;"></ng-template>
+<ng-template #fav1>
+	<button id="btnFav" (click)="addToFav()">Add to Favorite</button></ng-template>
+<ng-template #fav0>
+	<button id="btnFav" (click)="addToFav()">Remove from Favorite</button></ng-template>

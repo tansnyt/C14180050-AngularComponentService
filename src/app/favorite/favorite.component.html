@@ -1,0 +1,8 @@
+<p>
+	Favorite Notes!
+</p>
+<span *ngFor="let dot of notes;">
+  <a> Judul   : {{dot.getJudul()}}</a><br>
+  <a> Isi     : {{dot.getIsi()}}</a><br>
+  <a> Tanggal : {{dot.getTanggal()}} </a><br><br>
+</span>

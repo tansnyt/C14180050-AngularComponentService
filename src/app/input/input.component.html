@@ -1,0 +1,17 @@
+<br><br>
+Judul <br>
+<input type="text" [(ngModel)]="judul"><br>
+Isi <br>
+<input type="text" [(ngModel)]="isi"><br>
+Tanggal <br>
+<input type="date" [(ngModel)]="tanggal"><br>
+<br>
+*Isi judul untuk melihat detail note <br><br>
+<button (click)="inputNote()"> Add Note </button> &nbsp;
+<button (click)="detailNote()"> Detail Note </button>
+<br><br>
+<span *ngFor="let dot of notes;">
+  <a> Judul   : {{dot.getJudul()}}</a><br>
+  <a> Isi     : {{dot.getIsi()}}</a><br>
+  <a> Tanggal : {{dot.getTanggal()}} </a><br><br>
+</span>
